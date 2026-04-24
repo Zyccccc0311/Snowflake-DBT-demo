@@ -1,0 +1,12 @@
+dbt_test_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "dummy"
+      user: "dummy"
+      role: SYSADMIN
+      warehouse: COMPUTE_WH
+      database: DEMO_DB
+      schema: PUBLIC
+      threads: 8

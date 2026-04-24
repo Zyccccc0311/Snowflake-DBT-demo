@@ -1,0 +1,1 @@
+select * from {{ ref('raw_data_model') }} rw where upper(rw.region)='ASIA'
